@@ -1,0 +1,152 @@
+*{
+  font-family: 'Poppins', sans-serif;
+}
+.screen {
+
+    display: none;
+    padding: 20px;
+    border: 1px solid #555;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    right: 50px;
+  }
+  #home { background-color: #f0f0f0; }
+  #sobre { background-color: #e6f7ff; }
+  #contato { background-color: #f9e6e6; }
+  
+  .screen.active {
+    display: block;
+  }
+
+  /* Estilos para o menu */
+  nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  nav ul li a:hover {
+    background-color: #555;
+  }
+  .close-btn {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: inline-block;
+    margin-left: 90%;
+  }
+  .close-btn:hover {
+    background-color: #eee;
+  }
+  div#homebase-msg{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    border: 1px solid lightcoral;
+    color: #eee;
+    background-color: #333;
+    height: 200px;
+    width: 400px;
+  }
+  div p{
+    margin-top: 15px;
+    text-align: center;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: red;
+  }
+  /* STYLE QUEST 1*/
+
+  div#ques1{
+    margin-top: 30px;
+    align-items: center;
+    text-align: center;
+    display: flexbox;
+    justify-content: space-around
+  }
+  /* STYLE QUEST 2*/
+  div#ques2{
+    margin-top: 30px;
+    align-items: center;
+    text-align: center;
+    display: flexbox;
+    justify-content: space-around
+  }
+  div#box-num{
+    margin-left: 550px;
+  }
+  div#result{
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+  .select select{
+    border-radius: 10px;
+  }
+  /* STYLE QUEST 3*/
+  div#ques3{
+    margin-top: 30px;
+    align-items: center;
+    text-align: center;
+    display: flexbox;
+    justify-content: space-around
+  }
+  div#inputs-imc{
+    margin-left: 450px;
+  }
+  div#ques4{
+    margin-top: 30px;
+    align-items: center;
+    text-align: center;
+    display: flexbox;
+    justify-content: space-around
+  }
+  div#input-aQuadrado{
+    margin-left: 670px;
+  }
+  div#ques5{
+    margin-top: 30px;
+    align-items: center;
+    text-align: center;
+    display: flexbox;
+    justify-content: space-around
+  }
+  div#input-areaTE{
+    margin-left: 670px;
+  }
+  div#ques6{
+    margin-top: 30px;
+    align-items: center;
+    text-align: center;
+    display: flexbox;
+    justify-content: space-around
+  }
+  div#inputs-valores{
+    margin-left: 300px;
+  }

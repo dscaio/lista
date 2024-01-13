@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Lista</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  
+  </head>
+
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="#" onclick="showScreen('ques1')">Questão 1</a></li>
+      <li><a href="#" onclick="showScreen('ques2')">Questão 2</a></li>
+      <li><a href="#" onclick="showScreen('ques3')">Questão 3</a></li>
+      <li><a href="#" onclick="showScreen('ques4')">Questão 4</a></li>
+      <li><a href="#" onclick="showScreen('ques5')">Questão 5</a></li>
+      <li><a href="#" onclick="showScreen('ques6')">Questão 6</a></li>
+    </ul>
+
+  </nav>
+  <div id="homebase-msg">
+    <p>Aqui está a resolução de todas as questões da lista 😎</p>
+  </div>
+
+  <div id="ques1" class="screen">
+
+        <div id="title-q1">
+          <h1 class="texttitle">Cálculos Simples</h1>
+        </div>
+
+        <div class="input-group mb-3" id="box-num">
+            <label for="num1" style= "margin-right:20px">Número 1:</label>
+            <input type="number" id="num1">
+            <label for="num2" style="margin-right:20px; margin-left: 20px;">Número 2:</label>
+            <input type="number" id="num2">
+        </div>
+
+        <div id="box-btns">
+            <button class="btn btn-outline-secondary" type="button" onclick="somar()" style="color: black; margin-top: 20px; margin-bottom:15px;">Soma</button>
+            <button class="btn btn-outline-secondary" type="button" onclick="sub()" style="color: black; margin-top: 20px; margin-bottom:15px;">Subtração</button>
+            <button class="btn btn-outline-secondary" type="button" onclick="multpl()" style="color: black; margin-top: 20px; margin-bottom:15px;">Multiplicação</button>
+            <button class="btn btn-outline-secondary" type="button" onclick="divd()" style="color: black; margin-top: 20px; margin-bottom:15px;">Divisão</button>
+            <button class="btn btn-outline-secondary" type="button" onclick="med()" style="color: black; margin-top: 20px; margin-bottom:15px;">Média</button>
+        </div>
+
+        <div id="calcResult">Seu resultado irá aparecer aqui!</div>
+        <script src="ques1.js"></script>
+    
+    <button class="close-btn" onclick="closeScreen('ques1')">Fechar</button>
+  </div>
+
+  <div id="ques2" class="screen">
+        <div id="title-q2">
+          <h1 class="texttitle">Descubra a Capital</h1>
+        </div>
+        <div id="select-options" class="select">
+          <label for="state">Selecione um Estado!</label>
+          <select name="Estados" id="state">
+            <option value="Selecionar">Selecione um estado!</option>
+              <option value="Acre">Acre-AC</option>
+              <option value="Alagoas">Alagoas-AL</option>
+              <option value="Amapá">Amapá-AP</option>
+              <option value="Amazonas">Amazonas-AM</option>
+              <option value="Bahia">Bahia-BA</option>
+              <option value="Ceará">Ceará-CE</option>
+              <option value="Distrito Federal">Distrito Federal-DF</option>
+              <option value="Espírito Santo"> Espírito Santo-ES</option>
+              <option value="Goías">Goías-GO</option>
+              <option value="Maranhão">Maranhão-MA</option>
+              <option value="Mato Grosso">Mato Grosso-MT</option>
+              <option value="Mato Grosso do Sul">Mato Grosso do Sul-MS</option>
+              <option value="Minas Gerais">Minas Gerais-MG</option>
+              <option value="Pará">Pará-PA</option>
+              <option value="Paraíba">Paraíba-PB</option>
+              <option value="Paraná">Paraná-PR</option>
+              <option value="Pernambuco">Pernambuco-PE</option>
+              <option value="Piauí">Piauí-PI</option>
+              <option value="Rio de Janeiro">Rio de Janeiro-RJ</option>
+              <option value="Rio Grande do Norte">Rio Grande do Norte-RN</option>
+              <option value="Rio Grande do Sul">Rio Grande do Sul-RS</option>
+              <option value="Rondônia">Rondônia-RO</option>
+              <option value="Roraima">Roraima-RR</option>
+              <option value="Santa Catarina">Santa Catarina-SC</option>
+              <option value="São Paulo">São Paulo-SP</option>
+              <option value="Sergipe">Sergipe-SE</option>
+              <option value="Tocantins">Tocantins-TO</option>
+          </select>
+        </div>
+          <div id="box-searchBtn">
+            <button class="btn btn-outline-secondary" type="button" onclick="searchState()" id="searchState-btn" style="color: black; margin-top: 20px; margin-bottom:15px;">Search</button>
+          </div>
+          <div id="stsResult">Seu resultado irá aparecer aqui!</div>
+        
+        <script src="ques2.js"></script>
+    <button class="close-btn" onclick="closeScreen('ques2')">Fechar</button>
+  </div>
+
+  <div id="ques3" class="screen">
+    <div id="title-q3">
+      <h1 class="texttitle">Calculadora de IMC</h1>
+    </div>
+      <div id="inputs-imc" class="input-group mb-3">
+        <label for ="weight" style= "margin-right:20px">Digite o peso (KG)</label>
+        <input type = "number" id = "peso">
+        <label for = "height" style="margin-right:20px; margin-left: 20px;">Digite a sua altura (CM)</label>
+        <input type = "number" id = "alt">
+      </div>
+      <div id="box-imcBtn">
+        <button class="btn btn-outline-secondary" type="button" onclick="calcImc()" id="calcImc-btn" style="color: black; margin-top: 20px; margin-bottom:15px;">Calcular</button>
+      </div>
+      <div id="imcResult">Seu resultado irá aparecer aqui!</div>
+
+      <script src="ques3.js"></script>
+
+    <button class="close-btn" onclick="closeScreen('ques3')">Fechar</button>
+  </div>
+
+  <div id="ques4" class="screen">
+      <div id="title-q4">
+        <h1 class="texttitle">Área do Quadrado</h1>
+      </div>
+      <h4>Área do Quadrado = L x L ou L²</h4>
+      <div id="input-aQuadrado" class="input-group mb-3">
+        <label for ="lado" style= "margin-right:20px">Digite o valor do lado (CM)</label>
+        <input type = "number" id = "ladoQuadrado">
+      </div>
+      <div id="box-quadBtn">
+        <button class="btn btn-outline-secondary" type="button" onclick="calcArea()" id="calcArea-btn" style="color: black; margin-top: 20px; margin-bottom:15px;">Calcular</button>
+      </div>
+      <div id="areaResult">Resultado aqui!</div>
+      <script src="ques4.js"></script>
+    <button class="close-btn" onclick="closeScreen('ques4')">Fechar</button>
+  </div>
+
+  <div id="ques5" class="screen">
+      <div id="title-q5">
+        <h1 class="texttitle">Área de um Triângulo Equilátero</h1>
+      </div>
+      <h4>Área do T.E = (L².√3) / 4 -> SOBRE 4</h4>
+      <div id="input-areaTE" class="input-group mb-3">
+        <label for ="lado" style= "margin-right:20px">Digite o valor do lado (CM)</label>
+        <input type="number" id="ladoTE">
+      </div>
+      <div id="box-teBtn">
+        <button class="btn btn-outline-secondary" type="button" onclick="teAreaCalc()" id="calcArea-btn" style="color: black; margin-top: 20px; margin-bottom:15px;">Calcular</button>
+      </div>
+      <div id="teAreaResult">Seu resultado irá aparecer aqui!</div>
+      <script src="ques5.js"></script>
+    <button class="close-btn" onclick="closeScreen('ques5')">Fechar</button>
+  </div>
+
+  <div id="ques6" class="screen">
+    <div id="title-q6">
+      <h1 class="texttitle">E o descontinho?</h1>
+    </div>
+    <div id="inputs-valores" class="input-group mb-3">
+      <label for ="valorProduto" style= "margin-right:20px">Digite o valor do produto! (Será convertido para R$)</label>
+      <input type="number" id="valorProduto">
+      <label for="porcentDesconto" style="margin-right:20px; margin-left: 20px;">Digite o desconto! (%)</label>
+      <input type="number" id="pDesconto">
+    </div>
+    <div id="box-descBtn">
+      <button class="btn btn-outline-secondary" type="button" onclick="calcDesc()" id="calcArea-btn" style="color: black; margin-top: 20px; margin-bottom:15px;">Calcular</button>
+    </div>
+    <div id="valorResult">Seu resultado irá aparecer aqui!</div>
+    <div id="details"></div>
+    <script src="ques6.js"></script>
+  <button class="close-btn" onclick="closeScreen('ques6')">Fechar</button>
+</div>
+
+
+  <script src="homePage.js"></script>
+</body>
+</html>
